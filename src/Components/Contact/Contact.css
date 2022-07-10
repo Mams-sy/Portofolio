@@ -1,0 +1,87 @@
+.contact{
+    width: 100vw;
+    height: auto;
+}
+
+.contact-header {
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 23vw;
+  }
+  .contact-title {
+    color: #7582d9;
+    font-size: 30px;
+  }
+  .contact-logo {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding-top: 1vh;
+    color: #7582d9;
+    margin-right: 2vh;
+  }
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-label{
+    color: #7582d9;
+    font-size: 40px;
+    margin-top: 2vh;
+}
+.contact-form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .contact-input{
+        width: 30vw;
+        height: 5vh;
+        border: #7582d9 solid 1px;
+        border-radius: 10px;
+        margin-top: 2vh;
+        
+    }
+    .contact-textarea{
+        width: 30vw;
+        height: 15vh;
+        border: #7582d9 solid 1px;
+        border-radius: 10px;
+        margin-top: 2vh;
+    }
+    .contact-submit{
+        width: 30vw;
+        height: 5vh;
+        border: #7582d9 solid 1px;
+        border-radius: 10px;
+        background-color: #7582d9;
+        color: white;
+        font-size: 30px;
+        margin-top: 3vh;
+    }
+
+    @media  screen and (max-width:390px) {
+        .contact-label{
+            font-size: 25px;
+        }
+        .contact-input{
+            width: 50vw;
+            height: 2vh;
+        }
+        .contact-textarea{
+            width: 50vw;
+            height: 15vh;
+        }
+        .contact-submit{
+            width: 50vw;
+            height: 5vh;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+        
+    }

@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+.propos {
+width: auto;
+height: auto;
+  padding: 0;
+  margin: 0;
+
+}
+.propos-text {
+  display: flex;
+}
+.propos-image {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #7582D9;
+  border-radius: 50%;
+  margin-top: 10vh;
+  margin-left: 10vw;
+}
+.paragraphe-headlines {
+  color: #7582D9;
+
+  font-size: 30px;
+  width: auto;
+}
+.propos-para {
+  padding-left: 7vw;
+  padding-top: 4vh;
+}
+.propos-photo {
+  height: auto;
+}
+.paragraphe {
+  color: #BAC4FF;
+  font-size: 27px;
+  font-weight: 500;
+
+  margin-right: 23vw;
+}
+
+.formations {
+  display: flex;
+  padding-top: 7vh;
+}
+.formations-title {
+  color:#7582D9 ;
+  font-size: 30px;
+  width: auto;
+  margin-left: 2vh;
+}
+
+.education-logo {
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 1vh;
+  color: #7582D9;
+}
+
+.formations-content {
+  border-left: 3px solid #A0A8D9;
+}
+.formations-content-title {
+  padding-left: 2vh;
+  color: #A0A8D9;
+  
+}
+.formations-content-txt {
+  padding-left: 2vh;
+  color: #A5C3F0;
+}
+.formations-place {
+  font-style: italic;
+  color: #9ECDE6;
+  
+}
+.cursus {
+  font-style: italic;
+  color: #9ECDE6;
+  padding-left: 2vh;
+}
+.cursus-content {
+  padding-left: 2vh;
+  color: #AFA5F0;
+  font-size: 20px;
+}
+.downbutton{
+    color:#777777;
+    font-size: 100px;
+    justify-content: center;
+    margin-left: 40%;
+    align-items: center;
+}
+
+
+.slide:after{
+  content:"Mon CV";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align:center;
+  -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:before {
+  content:"Téléchargez le →";
+  height:100%;
+  width:100%;
+  position:absolute;
+  color:#383736;
+  left:-100%;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color:#A0A8D9;
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+}
+
+.slide.left:hover{
+  background:none;
+}
+
+.slide.left:before {
+  left:100%;
+  color:#383736;
+  -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  width: 200px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #A0A8D9;
+  border: 2px #AFA5F0 solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+@media screen and (max-width: 390px) {
+  .propos-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .propos-image{
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .propos-para{
+    padding-left: 0;
+  }
+  .paragraphe{
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .comp-cv{
+    margin-left: 23vw;
+
+  }
+  .formations{
+    flex-direction: column;
+  }
+  .formations-title{
+    margin-left: 0;
+  }
+  .formations-content{
+    border-left: none;
+    border-top: 3px solid #A0A8D9;
+  }
+  
+}
+  
