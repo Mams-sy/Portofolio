@@ -53,7 +53,7 @@ a:hover{
     color: #7582D9;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 425px) {
 
     .list {
         list-style-type: none;

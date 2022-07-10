@@ -163,7 +163,7 @@ button {
   -moz-transition:    0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 425px) {
   .propos-text{
     flex-direction: column;
     align-items: center;

@@ -88,7 +88,7 @@ font-weight: 500;
     width: auto;
   }
 
-  @media screen and (max-width:390px){
+  @media screen and (max-width:425px){
     .projets-header {
       flex-direction: column;
       align-items: center;
