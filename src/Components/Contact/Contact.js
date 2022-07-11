@@ -2,21 +2,28 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import "./Contact.css";
 import { MdOutlineContactMail} from "react-icons/md";
+import {toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 export default function Contact() {
 
+
   const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_pqea3bx', 'template_r1gqnle', form.current, 'Ti548V68DF612VnGH')
       .then((result) => {
-          console.log(result.text);
+
+        window.alert("Message envoyé !");
+        form.current.reset();
+          
       }, (error) => {
-          console.log(error.text);
+        window.alert("Erreur lors de l'envoi du message");
       });
   };
   return (
